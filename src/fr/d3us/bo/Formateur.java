@@ -16,4 +16,14 @@ public class Formateur extends Personne{
 	 @OneToMany(cascade = {CascadeType.PERSIST}, fetch = FetchType.LAZY)
 	 @JoinColumn(name="id")
 	 private List<Module> module;
+
+	public List<Module> getModule() {
+		return module;
+	}
+
+	public void setModule(List<Module> module) {
+		this.module = module;
+	}
+	 
+	 
 }
